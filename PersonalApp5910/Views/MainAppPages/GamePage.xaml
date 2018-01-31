@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PersonalApp5910.Views.MainAppPages.GamePage">
+	   <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" HorizontalOptions="Center" Padding="16,40,16,40" Spacing="10">
+                <Label FontSize="22">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="One Life Adventure" FontAttributes="Bold" />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                
+                <Image Source="GamePro.png" />
+                
+                <Button Text="Score" Clicked="ClickScore"  BackgroundColor="{StaticResource Primary}" TextColor="White"/>
+                <Button Text="Character" Clicked="ClickChar"  BackgroundColor="{StaticResource Primary}" TextColor="White"/>
+                <Button Text="Inventory" Clicked="ClickInv"  BackgroundColor="{StaticResource Primary}" TextColor="White"/>
+                <Button Text="Monster" Clicked="ClickMonster"  BackgroundColor="{StaticResource Primary}" TextColor="White"/>
+                <Button Text="Items" Clicked="ClickItems"  BackgroundColor="{StaticResource Primary}" TextColor="White"/>
+                <Button Text="Battle" Clicked="ClickBatt"  BackgroundColor="{StaticResource Primary}" TextColor="White"/>
+               
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
